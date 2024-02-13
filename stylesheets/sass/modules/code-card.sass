@@ -1,0 +1,62 @@
+
+.code-area
+  flex-shrink: 0
+  position: relative
+  width: 495px
+  height: 410px
+  background: #43464e
+  border-radius: 8px
+  margin: 0 30px
+  .code-card
+    font-size: 13px
+    background: #1c1e22
+    border-radius: 8px
+    width: 300px
+    height: 140px
+    filter: drop-shadow(8px 4px 30px rgba(0,0 ,0 ,0.6 ))
+    padding: 8px
+  .code-card-html
+    position: absolute
+    top: -20px
+    right: 40px
+  .code-card-scss
+    position: absolute
+    top: 130px
+    right: -20px
+  .code-card-js
+    position: absolute
+    bottom: -10px
+    right: 40px
+  .code-card-title
+    font-size: 14px
+    margin: 0
+    .fa-cog
+      color: #b7bbc8
+      margin: 0 4px
+  .code-card-code
+    margin: 4px 0
+    .orange
+      color: #a77f37
+    .yellow
+      color: #e1c971
+    .green
+      color: #74af86
+    .red
+      color: #9f8098
+    .blue
+      color: #7795a8
+    .block
+      display: block
+    .ti2em
+      text-indent: 2em
+    .ti4em
+      text-indent: 4em
+    .code-card-cursor
+      animation: codecusor 1s step-end infinite
+    @keyframes codecusor
+      0%
+        opacity: 1
+      50%
+        opacity: 0
+      100%
+        opacity: 1
