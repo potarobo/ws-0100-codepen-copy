@@ -164,7 +164,8 @@ img {
   height: 404px;
   margin: 32px 16px;
 }
-.features-card .card {
+
+.card {
   position: relative;
   width: 360px;
   height: 340px;
@@ -172,7 +173,8 @@ img {
   border-radius: 8px;
   padding: 30px;
 }
-.features-card .card .card-icon {
+
+.card-icon {
   position: absolute;
   top: -32px;
   left: 16px;
@@ -184,10 +186,14 @@ img {
   background: black;
   border-radius: 8px;
 }
-.features-card .card .card-icon .fa {
+
+.fa-heart,
+.fa-comment,
+.fa-eye {
   font-size: 48px;
 }
-.features-card .card .card-icon .card-description {
+
+.card-description {
   color: #b7bbc8;
 }
 
@@ -197,50 +203,60 @@ img {
   background: #2c303a;
   margin: 32px 16px;
 }
-.product-item .product-item-card {
+
+.product-item-card {
   display: flex;
   flex-direction: column;
   background: #2c303a;
   padding: 8px 16px;
   transition: all 0.2s;
 }
-.product-item .product-item-card .procuct-item-message {
+
+.procuct-item-message {
   font-size: 18px;
 }
-.product-item .product-item-card .product-item-description {
+
+.product-item-description {
   color: #b7bbc8;
   margin-top: 0;
 }
-.product-item .product-item-card .product-item-link {
+
+.product-item-link {
   margin-top: 0;
 }
-.product-item .product-item-card .product-item-body {
+
+.product-item-body {
   display: flex;
   margin-top: 8px;
 }
-.product-item .product-item-card .product-item-body img {
+.product-item-body img {
   width: 40px;
   height: 40px;
   border-radius: 4px;
   margin-right: 8px;
 }
-.product-item .product-item-card .product-item-body-title .product-item-body-title-text {
+
+.product-item-body-title-text {
   margin: 0;
 }
-.product-item .product-item-card .product-item-body-title .product-item-body-text {
+
+.product-item-body-text {
   margin-top: 0;
 }
-.product-item .product-item-card .product-item-card-footer {
+
+.product-item-card-footer {
   display: flex;
   padding: 8px 0;
   margin-top: auto;
 }
-.product-item .product-item-card .product-item-card-footer .product-item-card-footer-card {
+
+.product-item-card-footer-card {
   background: black;
   padding: 2px 4px;
   margin-right: 4px;
 }
-.product-item .scalable:hover {
+
+.product-item-card-scalable:hover {
   transform: scale(1.05);
   opacity: 0.4;
   border-radius: 4px;
@@ -267,7 +283,8 @@ img {
   border-radius: 8px;
   margin: 0 30px;
 }
-.code-area .code-card {
+
+.code-card {
   font-size: 13px;
   background: #1c1e22;
   border-radius: 8px;
@@ -276,59 +293,67 @@ img {
   filter: drop-shadow(8px 4px 30px rgba(0, 0, 0, 0.6));
   padding: 8px;
 }
-.code-area .code-card-html {
+
+.code-card-html {
   position: absolute;
   top: -20px;
   right: 40px;
 }
-.code-area .code-card-scss {
+
+.code-card-scss {
   position: absolute;
   top: 130px;
   right: -20px;
 }
-.code-area .code-card-js {
+
+.code-card-js {
   position: absolute;
   bottom: -10px;
   right: 40px;
 }
-.code-area .code-card-title {
+
+.code-card-title {
   font-size: 14px;
   margin: 0;
 }
-.code-area .code-card-title .fa-cog {
+
+.fa-cog {
   color: #b7bbc8;
   margin: 0 4px;
 }
-.code-area .code-card-code {
+
+.code-card-code {
   margin: 4px 0;
 }
-.code-area .code-card-code .orange {
+.code-card-code .orange {
   color: #a77f37;
 }
-.code-area .code-card-code .yellow {
+.code-card-code .yellow {
   color: #e1c971;
 }
-.code-area .code-card-code .green {
+.code-card-code .green {
   color: #74af86;
 }
-.code-area .code-card-code .red {
+.code-card-code .red {
   color: #9f8098;
 }
-.code-area .code-card-code .blue {
+.code-card-code .blue {
   color: #7795a8;
 }
-.code-area .code-card-code .block {
+.code-card-code .block {
   display: block;
 }
-.code-area .code-card-code .ti2em {
+.code-card-code .ti2em {
   text-indent: 2em;
 }
-.code-area .code-card-code .ti4em {
+.code-card-code .ti4em {
   text-indent: 4em;
 }
-.code-area .code-card-code .code-card-cursor {
+
+.code-card-cursor {
   animation: codecusor 1s step-end infinite;
 }
+
 @keyframes codecusor {
   0% {
     opacity: 1;
@@ -340,7 +365,6 @@ img {
     opacity: 1;
   }
 }
-
 .features {
   display: flex;
   justify-content: center;
@@ -355,10 +379,11 @@ img {
   display: flex;
   margin: 30px;
 }
-.hero .description-area {
+
+.hero-description-area {
   padding: 30px;
 }
-.hero .description-area .fa-cube {
+.hero-description-area .fa-cube {
   font-size: 34px;
 }
 
@@ -386,7 +411,7 @@ img {
     display: block;
     margin: 30px 0;
   }
-  .hero .description-area {
+  .hero-description-area {
     margin: 30px;
   }
 }
