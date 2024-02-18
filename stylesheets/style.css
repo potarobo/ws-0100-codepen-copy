@@ -54,8 +54,14 @@ img {
   background: #121416;
 }
 
+.l-header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
 .l-section {
-  margin: 0 30px;
+  margin: 32px 0;
 }
 
 .l-footer {
@@ -85,6 +91,9 @@ img {
   padding: 8px 16px;
   text-align: center;
 }
+.button:hover {
+  opacity: 0.4;
+}
 
 .button-logo {
   margin: 0 16px;
@@ -101,36 +110,26 @@ img {
   width: 100%;
 }
 
-.btn-header {
-  text-align: center;
-  border-radius: 4px;
+.button-primary {
+  background: #46ce72;
+  color: black;
+  min-width: 100px;
+  border: none;
   margin: 0 4px;
 }
-.btn-header a {
-  display: block;
-  width: 100px;
-  padding: 8px 16px;
-}
-.btn-header:hover {
-  opacity: 0.4;
-}
 
-.signup {
-  background: #46ce72;
-}
-.signup a {
-  color: black;
-}
-
-.login {
+.button-secondary {
   background: #444857;
+  min-width: 100px;
+  border: none;
+  margin: 0 4px;
 }
 
-.hero-btn-signup a {
+.button-hero {
+  background: #46ce72;
+  border: none;
   color: black;
   font-size: 21px;
-  background: #46ce72;
-  border-radius: 4px;
   padding: 8px 16px;
 }
 
@@ -146,22 +145,9 @@ img {
   opacity: 0.4;
 }
 
-.product-item-list-footer-btn {
-  display: block;
-  color: #fff;
-  border: 3px solid #aaaebc;
-  border-radius: 4px;
-  padding: 8px 16px;
-  margin-bottom: 30px;
-}
-.product-item-list-footer-btn:hover {
-  opacity: 0.4;
-}
-
 .features-card {
   display: flex;
   align-items: center;
-  height: 404px;
   margin: 32px 16px;
 }
 
@@ -185,6 +171,9 @@ img {
   align-items: center;
   background: black;
   border-radius: 8px;
+}
+.card-icon .fa {
+  font-size: 48px;
 }
 
 .fa-heart,
@@ -279,7 +268,7 @@ img {
   position: relative;
   width: 495px;
   height: 410px;
-  background: #43464e;
+  background: linear-gradient(90deg, #43464e, #202125);
   border-radius: 8px;
   margin: 0 30px;
 }
@@ -290,7 +279,6 @@ img {
   border-radius: 8px;
   width: 300px;
   height: 140px;
-  filter: drop-shadow(8px 4px 30px rgba(0, 0, 0, 0.6));
   padding: 8px;
 }
 
@@ -312,12 +300,17 @@ img {
   right: 40px;
 }
 
-.code-card-title {
+.code-card-name {
+  display: flex;
+  align-items: center;
+}
+
+.code-card-title-text {
   font-size: 14px;
   margin: 0;
 }
 
-.fa-cog {
+.code-card-cog:before {
   color: #b7bbc8;
   margin: 0 4px;
 }
@@ -381,6 +374,7 @@ img {
 }
 
 .hero-description-area {
+  width: 50%;
   padding: 30px;
 }
 .hero-description-area .fa-cube {
@@ -391,6 +385,10 @@ img {
   font-size: 48px;
   font-weight: bold;
   margin: 0;
+}
+
+.hero-text {
+  font-size: 1.1rem;
 }
 
 .hero-btn-signup {
@@ -406,21 +404,16 @@ img {
   padding: 8px 16px;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 576px) {
   .hero {
     display: block;
     margin: 30px 0;
   }
   .hero-description-area {
+    width: 100%;
     margin: 30px;
   }
 }
-.l-header {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-
 .codepen-logo {
   text-align: center;
 }

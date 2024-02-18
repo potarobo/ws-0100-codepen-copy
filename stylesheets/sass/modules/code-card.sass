@@ -1,10 +1,10 @@
-
+@use '../variable' as v
 .code-area
   flex-shrink: 0
   position: relative
   width: 495px
   height: 410px
-  background: #43464e
+  background: linear-gradient(90deg, #43464e,#202125)
   border-radius: 8px
   margin: 0 30px
 .code-card
@@ -13,7 +13,6 @@
   border-radius: 8px
   width: 300px
   height: 140px
-  filter: drop-shadow(8px 4px 30px rgba(0,0 ,0 ,0.6 ))
   padding: 8px
 .code-card-html
   position: absolute
@@ -27,11 +26,14 @@
   position: absolute
   bottom: -10px
   right: 40px
-.code-card-title
+.code-card-name
+  display: flex
+  align-items: center
+.code-card-title-text
   font-size: 14px
   margin: 0
-.fa-cog
-  color: #b7bbc8
+.code-card-cog:before
+  color: v.$gray
   margin: 0 4px
 .code-card-code
   margin: 4px 0
