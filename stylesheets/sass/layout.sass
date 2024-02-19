@@ -1,3 +1,5 @@
+@use 'variable' as v
+
 .l-flex
     display: flex
     justify-content: space-between
@@ -11,7 +13,7 @@
     flex-grow: 1
     display: flex
     flex-direction: column
-    background: #121416
+    background: v.$background-color
 .l-header
     display: flex
     align-items: center
@@ -20,9 +22,5 @@
     margin: 32px 0
 
 .l-footer
-    background: black
+    background: v.$black
     padding: 30px 20px
-
-@media (max-width: 567px)
-    .l-section
-        margin: 30px 0 0

@@ -51,7 +51,7 @@ img {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  background: #121416;
+  background: #131417;
 }
 
 .l-header {
@@ -69,11 +69,6 @@ img {
   padding: 30px 20px;
 }
 
-@media (max-width: 567px) {
-  .l-section {
-    margin: 30px 0 0;
-  }
-}
 .badge {
   background: #ffdd40;
   border-radius: 4px;
@@ -81,7 +76,7 @@ img {
   margin-left: 4px;
   font-size: 10px;
   font-weight: bold;
-  color: #000;
+  color: black;
 }
 
 .button {
@@ -129,26 +124,22 @@ img {
   background: #46ce72;
   border: none;
   color: black;
-  font-size: 21px;
-  padding: 8px 16px;
+  font-size: 1.4rem;
+  padding: 8px 24px;
 }
 
-.card-btn {
-  margin-top: 20px;
-}
-.card-btn a {
+.button-card {
+  margin-top: 1rem 0;
+  border: none;
   background: #444857;
   border-radius: 4px;
   padding: 8px 16px;
-}
-.card-btn a:hover {
-  opacity: 0.4;
 }
 
 .features-card {
   display: flex;
   align-items: center;
-  margin: 32px 16px;
+  margin: 2rem 1rem;
 }
 
 .card {
@@ -166,20 +157,12 @@ img {
   left: 16px;
   width: 64px;
   height: 64px;
+  font-size: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: black;
   border-radius: 8px;
-}
-.card-icon .fa {
-  font-size: 48px;
-}
-
-.fa-heart,
-.fa-comment,
-.fa-eye {
-  font-size: 48px;
 }
 
 .card-description {
@@ -190,7 +173,7 @@ img {
   width: 360px;
   height: 313px;
   background: #2c303a;
-  margin: 32px 16px;
+  margin: 2rem 1rem;
 }
 
 .product-item-card {
@@ -311,7 +294,7 @@ img {
 }
 
 .code-card-cog:before {
-  color: #b7bbc8;
+  color: #aaaebc;
   margin: 0 4px;
 }
 
@@ -361,7 +344,6 @@ img {
 .features {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .footer-list-text span {
@@ -370,15 +352,16 @@ img {
 
 .hero {
   display: flex;
-  margin: 30px;
+  margin: 32px;
 }
 
 .hero-description-area {
   width: 50%;
   padding: 30px;
 }
-.hero-description-area .fa-cube {
-  font-size: 34px;
+
+.hero-cube:before {
+  font-size: 36px;
 }
 
 .hero-title {
@@ -407,11 +390,10 @@ img {
 @media (max-width: 576px) {
   .hero {
     display: block;
-    margin: 30px 0;
+    margin: 32px 0;
   }
   .hero-description-area {
     width: 100%;
-    margin: 30px;
   }
 }
 .codepen-logo {
@@ -490,7 +472,7 @@ img {
 }
 
 .text-primary {
-  color: #47cf73;
+  color: #46ce72;
 }
 
 .text-accent {

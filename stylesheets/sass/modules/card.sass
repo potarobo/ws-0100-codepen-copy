@@ -1,12 +1,14 @@
+@use '../variable' as v
+
 .features-card
   display: flex
   align-items: center
-  margin: 32px 16px
+  margin: 2rem 1rem
 .card
   position: relative
   width: 360px
   height: 340px
-  background: #2c303a
+  background: v.$card-gray
   border-radius: 8px
   padding: 30px
 .card-icon
@@ -15,36 +17,31 @@
   left: 16px
   width: 64px
   height: 64px
+  font-size: 48px
   display: flex
   justify-content: center
   align-items: center
-  background: black
+  background: v.$black
   border-radius: 8px
-  .fa
-    font-size: 48px
-.fa-heart,
-.fa-comment,
-.fa-eye
-  font-size: 48px
 
 .card-description
-  color: #b7bbc8
+  color: v.$lightgray
 
 .product-item
   width: 360px
   height: 313px
-  background: #2c303a
-  margin: 32px 16px
+  background: v.$card-gray
+  margin: 2rem 1rem
 .product-item-card
   display: flex
   flex-direction: column
-  background: #2c303a
+  background: v.$card-gray
   padding: 8px 16px
   transition: all 0.2s
 .procuct-item-message
   font-size: 18px
 .product-item-description
-  color: #b7bbc8
+  color: v.$lightgray
   margin-top: 0
 .product-item-link
   margin-top: 0
@@ -66,7 +63,7 @@
   padding: 8px 0
   margin-top: auto
 .product-item-card-footer-card
-  background: black
+  background: v.$black
   padding: 2px 4px
   margin-right: 4px
 .product-item-card-scalable
