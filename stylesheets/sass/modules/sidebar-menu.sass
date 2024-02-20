@@ -1,4 +1,4 @@
-@use '../variable' as v
+@use '../forward' as f
 
 .sidebar
     background: #1F1F26
@@ -7,7 +7,7 @@
     margin: 0.2em
     font-size: 0.8em
     text-align: center
-    color: v.$lightgray
+    color: f.$lightgray
 
 .sidebar-menu-title
     font-size: 0.8rem
@@ -19,11 +19,11 @@
     padding-left: 16px
 
 .sidebar-menu a:hover
-    background: v.$black
+    background: f.$black
 
 .sidebar-menu-sub-list
     margin-bottom: 16px
 
-@media (max-width: 576px)
+@include f.sm
     .sidebar
         display: none
