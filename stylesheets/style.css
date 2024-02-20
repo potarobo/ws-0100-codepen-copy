@@ -378,19 +378,6 @@ img {
   font-size: 1.1rem;
 }
 
-.hero-btn-signup {
-  text-align: center;
-}
-.hero-btn-signup a {
-  display: block;
-  color: black;
-  font-size: 21px;
-  width: 200px;
-  background: #46ce72;
-  border-radius: 4px;
-  padding: 8px 16px;
-}
-
 @media (max-width: 576px) {
   .hero {
     display: block;
@@ -419,7 +406,6 @@ img {
 
 .search-form i {
   font-size: 16px;
-  color: #fff;
 }
 
 .search-form-input {
